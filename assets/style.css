@@ -79,8 +79,8 @@ code{color:var(--text);background:rgba(255,255,255,.06);padding:2px 6px;border-r
 }
 
 .avatar-wrap{
-  width:96px;height:96px;
-  border-radius:22px;
+  width:120px;height:120px;
+  border-radius:24px;
   border:1px solid var(--line);
   background:rgba(255,255,255,.03);
   display:grid;place-items:center;
