@@ -134,7 +134,6 @@
       </div>
 
       <p class="muted tiny" style="margin-top:6px">
-        Add a theme image per paper into <code>assets/papers/</code> (PNG/JPG). Filenames are listed on each card.
       </p>
 
       <div class="pubgrid" id="pubgrid">
@@ -368,6 +367,7 @@
   </main>
 
   <script>
+  window.addEventListener("load", () => {
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Filter buttons
@@ -400,8 +400,12 @@
       img.onerror = () => {
         // keep fallback visible
       };
-      img.src = url;
+
+      // cache-bust (optional but helps GitHub Pages caching)
+      img.src = url + (url.includes("?") ? "&" : "?") + "v=" + Date.now();
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
