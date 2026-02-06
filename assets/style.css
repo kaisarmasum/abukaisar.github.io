@@ -29,7 +29,31 @@ h1{margin:0;font-size:40px;letter-spacing:-0.02em}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
-.links{display:flex;gap:10px;flex-wrap:wrap;align-items:center;color:var(--muted)}
+/* Links */
+.links{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  color:var(--muted);
+}
+
+/* NEW: icon links */
+.iconlink{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:var(--accent);
+  font-weight:800;
+  text-decoration:none;
+}
+.iconlink:hover{ text-decoration:underline; }
+.iconlink i{
+  font-size:16px;
+  line-height:1;
+}
+.iconlink span{ color:inherit; }
+
 .tags{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
 .tag{
   border:1px solid var(--line);
@@ -180,8 +204,7 @@ code{color:var(--text);background:rgba(15,23,42,.06);padding:2px 6px;border-radi
   color:var(--text);
 }
 .red{ color:#dc2626; font-weight:800; }
-.deepblue{ color:#1e3a8a; font-weight:800; } 
+.deepblue{ color:#1e3a8a; font-weight:800; }
 
 /* Prevent overlay from blocking clicks */
 .thumb-fallback{ pointer-events:none; }
-
