@@ -132,6 +132,40 @@ code{color:var(--text);background:rgba(15,23,42,.06);padding:2px 6px;border-radi
 .timeline .dot{width:8px;height:8px;border-radius:99px;background:var(--good)}
 .timeline .item{color:var(--text)}
 
+/* News: hidden extra items + toggle button */
+.hidden{ display:none; }
+
+.trophy-icon{
+  color:#d97706;
+  margin-right:6px;
+}
+
+.news-toggle-btn{
+  margin-top:12px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid var(--line);
+  background:rgba(15,23,42,.02);
+  color:var(--accent);
+  padding:8px 14px;
+  border-radius:999px;
+  font-weight:800;
+  font-size:13px;
+  cursor:pointer;
+  transition:background .2s;
+}
+.news-toggle-btn:hover{
+  background:rgba(37,99,235,.08);
+}
+.news-toggle-btn i{
+  font-size:11px;
+  transition:transform .2s;
+}
+.news-toggle-btn.expanded i{
+  transform:rotate(180deg);
+}
+
 /* Filters */
 .filters{display:flex;gap:8px;flex-wrap:wrap}
 .chip{
