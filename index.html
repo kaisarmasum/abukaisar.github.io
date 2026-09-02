@@ -107,10 +107,31 @@
 
 <body>
   <header class="container header">
-    <div class="hero">
-      <div class="avatar-wrap">
-        <img class="avatar" src="assets/my.png" alt="Abu Kaisar Mohammad Masum photo" onerror="this.style.display='none'">
-        <div class="avatar-fallback" aria-hidden="true"></div>
+    <div class="hero hero-profile">
+      <div class="hero-photo-col">
+        <div class="avatar-wrap">
+          <img class="avatar" src="assets/my.png" alt="Abu Kaisar Mohammad Masum photo" onerror="this.style.display='none'">
+          <div class="avatar-fallback" aria-hidden="true"></div>
+        </div>
+
+        <div class="icon-row">
+          <a class="icon-btn" href="mailto:abukaisar24@gmail.com" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a class="icon-btn" href="https://scholar.google.com/citations?user=B194MGYAAAAJ&hl=en" target="_blank" rel="noreferrer" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </a>
+          <a class="icon-btn" href="https://github.com/Abu-Kaisar-Mohammad-Masum" target="_blank" rel="noreferrer" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/abukaisar24/" target="_blank" rel="noreferrer" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="hero-badge">
+          <i class="fa-solid fa-trophy trophy-icon"></i> 2025 DAC Young Fellow
+        </div>
       </div>
 
       <div class="hero-text">
@@ -118,28 +139,6 @@
         <p class="subtitle">
           Ph.D. Candidate • Quantum Machine Learning • LLM • Emerging Computing • Hyperdimensional Computing (HDC)
         </p>
-
-        <div class="links">
-          <a class="iconlink" href="mailto:abukaisar24@gmail.com / c00591145@louisiana.edu" title="Email (Outlook)">
-            <i class="fa-solid fa-envelope"></i>
-            <span>c00591145@louisiana.edu</span>
-          </a>
-          <span>·</span>
-          <a class="iconlink" href="https://github.com/Abu-Kaisar-Mohammad-Masum" target="_blank" rel="noreferrer" title="GitHub">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
-          </a>
-          <span>·</span>
-          <a class="iconlink" href="https://scholar.google.com/citations?user=B194MGYAAAAJ&hl=en" target="_blank" rel="noreferrer" title="Google Scholar">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <span>Google Scholar</span>
-          </a>
-          <span>·</span>
-          <a class="iconlink" href="https://www.linkedin.com/in/abukaisar24/" target="_blank" rel="noreferrer" title="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-        </div>
 
         <div class="tags">
           <span class="tag">Quantum ML</span>
@@ -167,13 +166,30 @@
     <!-- ══ ABOUT ══ -->
     <section id="about" class="card">
       <h2>About</h2>
-      <p>
-      Abu Kaisar Mohammad Masum is a Ph.D. candidate in Quantum Machine Learning and Emerging Computing at the University of Louisiana at Lafayette, where he also earned an M.S. in Computer Science.
-      He received his B.S. in Computer Science and Engineering from Daffodil International University, Bangladesh. 
-      His research has been published in leading venues, including DAC, AAAI, DATE, ISLPED, IEEE TVLSI, IEEE TBME, Nature Portfolio, IEEE Embedded Systems Letters, ISCAS, QCE, ICCD, GLSVLSI, MWSCAS, AAAI Fall Symposium, ARQTEC@HPCA, and WUC@ASPLOS. 
-      In 2025, he was selected as a DAC Young Fellow. Most recently, he was part of the winning team in the NASA Beyond the Algorithm Challenge: Novel Computing Architectures for Flood Analysis, securing a $100K grant for pioneering research integrating Quantum Computing and Hyperdimensional Computing (HDC) for real-world flood analysis.
 
-      </p>
+      <div class="bio-paragraphs">
+        <p>
+          I am a Ph.D. candidate in <a href="#research-map">Quantum Machine Learning and Emerging Computing</a> at the
+          <a href="https://www.louisiana.edu/" target="_blank" rel="noreferrer">University of Louisiana at Lafayette</a>,
+          where I also earned my M.S. in Computer Science, advised by
+          <a href="https://scholar.google.com/citations?user=B194MGYAAAAJ&hl=en" target="_blank" rel="noreferrer">Dr. Sercan Aygun</a>.
+          I received my B.S. in Computer Science and Engineering from Daffodil International University, Bangladesh.
+        </p>
+
+        <p>
+          My research focuses on hardware-aware, emerging AI — spanning quantum machine learning, hyperdimensional
+          computing (HDC/VSA), and hardware-efficient inference for edge and low-resource settings. My work has
+          appeared at venues including DAC, AAAI, DATE, ISLPED, IEEE TVLSI, IEEE TBME, Nature Portfolio, IEEE Embedded
+          Systems Letters, ISCAS, QCE, ICCD, GLSVLSI, MWSCAS, AAAI Fall Symposium, ARQTEC@HPCA, and WUC@ASPLOS.
+        </p>
+
+        <p>
+          In 2025, I was selected as a <span class="darkdraw">DAC Young Fellow</span>. Most recently, I was part of the
+          winning team in the <span class="darkdraw">NASA Beyond the Algorithm Challenge</span>: Novel Computing
+          Architectures for Flood Analysis, securing a <b>$100K</b> grant for research integrating quantum computing
+          and hyperdimensional computing for real-world flood analysis.
+        </p>
+      </div>
 
       <div class="two-col">
         <div>
@@ -670,21 +686,21 @@
       <h2>Awards, Funding &amp; Recognition</h2>
       <h3>Funding &amp; Travel Awards</h3>
       <ul>
-        <li><i  title="Award / Grant"></i><b>Winner:</b> NASA Beyond the Algorithm Challenge— Novel Computing Architectures for Flood Analysis (<b>$100K</b> grant)</li>
+        <li><i title="Award / Grant"></i><b>Winner:</b> NASA Beyond the Algorithm Challenge— Novel Computing Architectures for Flood Analysis (<b>$100K</b> grant)</li>
         <li><i  title="Award / Grant"></i><b>Quantum Ideas Summer School</b> — Travel support (~<b>$2.5K</b>)</li>
-        <li><i  title="Award / Grant"></i><b>DAC Young Fellow Award</b> (2025) — Travel award (~<b>$1.4K</b>)</li>
+        <li><i title="Award / Grant"></i><b>DAC Young Fellow Award</b> (2025) — Travel award (~<b>$1.4K</b>)</li>
         <li><i title="Award / Grant"></i><b>AAAI Travel Award</b> — Travel support (~<b>$1.04K</b>)</li>
         <li><i  title="Award / Grant"></i><b>IEEE Computer Society Travel Award</b> — Travel support (~<b>$1K</b>)</li>
-        <li><i  title="Award / Grant"></i><b>IEEE CAS Student Travel Grant</b> — Travel support (<b>$1K</b>)</li>
+        <li><i title="Award / Grant"></i><b>IEEE CAS Student Travel Grant</b> — Travel support (<b>$1K</b>)</li>
         <li><i  title="Award / Grant"></i><b>GLSVLSI'25 Student Volunteer Travel Award</b> — Travel support (~<b>$1K</b>)</li>
       </ul>
       <h3>Honors &amp; Recognition</h3>
       <ul>
         <li><i title="Award / Grant"></i><b>Academic Excellence Award</b>, University of Louisiana at Lafayette (2025)</li>
-        <li><i  title="Award / Grant"></i><b>Leaf Award</b>, University of Louisiana at Lafayette (2025)</li>
+        <li><i title="Award / Grant"></i><b>Leaf Award</b>, University of Louisiana at Lafayette (2025)</li>
         <li><i title="Award / Grant"></i><b>Peer Tutoring Excellence Awards</b> (Fall 2023 &amp; Spring 2024), Florida Institute of Technology</li>
-        <li><i  title="Award / Grant"></i><b>Outstanding Student of the Year</b> (2023), Florida Institute of Technology</li>
-        <li><i  title="Award / Grant"></i><b>Best Performing Faculty</b> and <b>Best Researcher</b>, Daffodil International University (2021)</li>
+        <li><i title="Award / Grant"></i><b>Outstanding Student of the Year</b> (2023), Florida Institute of Technology</li>
+        <li><i title="Award / Grant"></i><b>Best Performing Faculty</b> and <b>Best Researcher</b>, Daffodil International University (2021)</li>
       </ul>
     </section>
 
